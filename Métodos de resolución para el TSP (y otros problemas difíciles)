@@ -1,0 +1,45 @@
+A continuación se listan una serie de métodos de resolución para el TSP que son válidos para otros muchos problemas de optimización combinatoria. Los podemos dividir entre métodos aproximados o heurísticos y métodos exactos.
+
+Algoritmos heurísticos. (Consultar la Subsección 9.3.1 del libro de Salazar)
+
+Se llama algoritmo heurístico (o simplemente heurístico) a cualquier algoritmo que con poco esfuerzo computacional proporcione una solución factible cuyo valor objetivo normalmente está próximo al valor objetivo óptimo del problema original. Las soluciones obtenidas mediante un heurístico se denominan soluciones heurísticas.  
+
+Dado ϵ>0
+, se llama algoritmo ϵ
+-aproximado a cualquier heurístico que produzca una solución cuyo costo z′
+, respecto al costo z∗
+ de una solución óptima, verifique |z′−z∗|≤ϵ|z∗|
+. Por ejemplo, si se da la desigualdad triangular, el algoritmo que consiste en generar la solución del árbol generador mínimo y unirle la solución del problema del 2-emparejamiento de los nodos con grado impar del árbol generador mínimo es un heurístico ϵ
+-aproximado con ϵ=0,5
+.
+
+Heurísticos constructivos: son heurísticos que tratan de construir una solución factible sin precisar de ninguna previa.
+ Heurísticos voraces ("Greedy"). (En la web pueden ver cómo funcionan) 
+El vecino más cercano.
+Inserción del nodo más cercano
+Inserción del nodo más lejano.
+Otros heurísticos constructivos.
+Heurísticos de mejora.
+2-optimalidad.
+3-optimalidad.
+Inserción (un caso particular de 3-optimalidad).
+Heurísticos primales o heurísticos basados en el LP.
+Estrategias más avanzadas (Metaherísticas)
+ multiarranque ("multistart").
+Temple simulado ("simulated annealing").
+Búsquedas prohibidas ("tabu search").
+Algoritmos Genéticos ("genetic algorithms").
+Redes neuronales ("neural networks").
+Método hormiga ("ant method").
+GRASP (Greedy Randomize Adaptive Search Procedure)
+Matheuristics (Metaherísticas que combinan programación matemática con algoritmos heurísticos)
+Algoritmos exactos. 
+
+Hiperplanos de corte. (Consultar la Sección 7.3 del libro de Salazar). Vale para cualquier problema de programación lineal entera (o mixta) aunque en la práctica no da muy buenos resultados.
+Ramificación y acotación ("branch-and-bound").  (Consultar las Secciones 7.4 y 9.3.3  del libro de Salazar).  
+Importancia del modelo.
+Problema Relajado.
+Ramificación y corte ("branch-and-cut"). (Consultar la Sección 9.3.4 del libro de Salazar).
+Problema de Separación (ver ejemplos para el TSP en páginas 370--374 del libro de Salazar).
+Generación de columnas ("branch-and-price"). (Consultar la Sección 9.3.5 del libro de Salazar).
+Programación dinámica. (Consultar la Sección 9.3.6 del libro de Salazar).
